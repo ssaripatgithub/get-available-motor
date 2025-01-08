@@ -1,0 +1,23 @@
+{
+  "name": "get-available-motor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "lambda-build upload get-available-motor -r ap-southeast-2",
+    "local": "node -r esbuild-register run.ts",
+    "test": "mocha --recursive 'test' --extension ts --exit --require esbuild-register --timeout 2000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.147",
+    "@types/node": "^22.10.5",
+    "esbuild-register": "^3.6.0"
+  },
+  "dependencies": {
+    "@types/mocha": "^10.0.10",
+    "mocha": "^11.0.1"
+  }
+}
