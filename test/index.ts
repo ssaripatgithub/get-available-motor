@@ -14,6 +14,7 @@ const executeLambda = async (): Promise<Output | null> => {
 describe('get-available-motor', () => {
   it('should return correct number of motors', async () => {
     const output = await executeLambda();
-    strictEqual(output?.length, 3);
+    const number_of_motors = 4;
+    strictEqual(output?.length, number_of_motors);
   });
 });
